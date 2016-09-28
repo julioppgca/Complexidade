@@ -29,7 +29,6 @@ uint32_t calc(uint32_t lin, uint32_t lim)
 	{
 		matrix[lin][i]=(matrix[lin][i-1]+matrix[lin-1][i+1])/2;
 		//printf(" [%d][%d] %.2f",lin,i,matrix[lin][i]);
-
 	}
 	//puts("\n");
 	if(lim--) calc(++lin,lim);
